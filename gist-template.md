@@ -73,10 +73,14 @@ Some regex have flags at their end to define any additional functionality or at 
 
 * `m` -when the multiline flag is enabled, beginning and end anchors (^ and $) will match the start and end of a line, instead of the start and end of the whole string.
 
-
-
 ### Character Escapes
+
+There is only one Character Escape in this regular expression: 
+
+* `\.` -this component separates the `.` as a special character that is used in the search. For example in `[a-z0-9_\.-]` the `\.` is included in this bracket expression as a character that can be searched and matched.
+
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+* [Github](https://www.github.com/ZacharyWarnes)
+* [email](mailto:zacharywarnes@gmail.com)
