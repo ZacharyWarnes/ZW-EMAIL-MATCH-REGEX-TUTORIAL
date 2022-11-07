@@ -39,6 +39,7 @@ For our regex, these two anchors start and end the matching email value.
 * `{2,6}`- this quantifier sets a minimum and maximum character value at a minimum or 2 characters and a maximum of 6 characters. For example: `([a-z\.]{2,6})` the quantifier is setting a minimum and maximum value for characters in this the set range provided.
 
 ### Grouping Constructs
+
 This regex has multiple capture groups. Each capture group designated by `()` treats the context of the group as a single unit. Examples of these groups from our regex are below:
 
 * `([a-z0-9_\.-]+)` 
@@ -54,9 +55,25 @@ Bracket expressions represent the range of characters to be used in a value sear
 
 ### Character Classes
 
+There are two character classes in this regex, one of which is touched on above:
+
+* `[a-z0-9_\.-]` -this is a range, a group of values separated by a hyphen that show a range of searchable characters. For this example the range is lower case letters a-z and digits 0-9.  
+
+* `\d` -this character class is shorthand for digits, or all digits.
+
 ### The OR Operator
 
+The OR Operator in regex is written as `|` and describes logic outside of brackets. There are no OR operators in this regex.
+
 ### Flags
+
+Some regex have flags at their end to define any additional functionality or at times limits for the regex. Our regex for matching an email does not include flags but here are examples of some below:
+
+* `g` -retains the index of the last match, allowing subsequent searches to start from the end of the previous match.
+
+* `m` -when the multiline flag is enabled, beginning and end anchors (^ and $) will match the start and end of a line, instead of the start and end of the whole string.
+
+
 
 ### Character Escapes
 
