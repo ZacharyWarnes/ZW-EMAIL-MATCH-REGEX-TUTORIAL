@@ -1,10 +1,14 @@
-# Title (replace with your title)
+# ZW-REGEX-TUTORIAL
 
-Introductory paragraph (replace this with your text)
+This is a tutorial showing a regular expression (regex) for matching an e-mail value.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This document will explain all of the components of the following regex for matching an e-mail value:
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+This regex was provided to us by our instructor material and we are to break down its components to explain what the regex means and how it was constructed.
 
 ## Table of Contents
 
@@ -20,10 +24,22 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+There are two anchors in this regex for matching an email value: 
+
+* `^` -matches the start of a string. This matches a position and not a character.
+* `$` -matches the end of a string. This matches a position not a character.
+
+For our regex, these two anchors start and end the matching email value.
+
 
 ### Quantifiers
 
+* `+` -this quantifier matches one or more of the preceding tokens. For example: in `([a-z0-9_\.-]+)` the `+` indicates that the value should match and digit, letter, or `.` once or more
+
+* `{2,6}`- this quantifier sets a minimum and maximum character value at a minimum or 2 characters and a maximum of 6 characters. For example: `([a-z\.]{2,6})` the quantifier is setting a minimum and maximum value for characters in this the set range provided.
+
 ### Grouping Constructs
+
 
 ### Bracket Expressions
 
